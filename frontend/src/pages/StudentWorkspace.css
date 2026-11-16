@@ -35,7 +35,7 @@
   min-width: 0;
   min-height: 0;
   height: 100%;
-  gap: 14px;
+  gap: 12px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
@@ -59,14 +59,13 @@
   border-radius: 10px;
   overflow: hidden;
   color: #171717;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .recent-attempts-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
   padding: 16px 20px;
   border-bottom: 1px solid #e5e5e5;
   background: #fafafa;
@@ -82,49 +81,25 @@
 .recent-attempts-header span {
   color: #737373;
   font-size: 12px;
-  white-space: nowrap;
 }
 
 .no-attempts {
-  padding: 24px 20px;
+  padding: 20px;
   margin: 0;
   color: #737373;
   font-size: 13px;
   text-align: center;
-  line-height: 1.6;
 }
-
-/* Scrollable Attempts List */
 
 .attempt-list {
   width: 100%;
-  max-height: 280px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: #d4d4d4 transparent;
 }
-
-.attempt-list::-webkit-scrollbar {
-  width: 5px;
-}
-
-.attempt-list::-webkit-scrollbar-thumb {
-  background: #d4d4d4;
-  border-radius: 10px;
-}
-
-.attempt-list::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Individual Attempt */
 
 .attempt-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   padding: 15px 20px;
   border-bottom: 1px solid #eee;
   transition: background 0.2s ease;
@@ -148,14 +123,12 @@
 .attempt-details strong {
   font-size: 13px;
   color: #171717;
-  overflow-wrap: anywhere;
 }
 
 .attempt-details span,
 .attempt-details small {
   color: #737373;
   font-size: 12px;
-  line-height: 1.5;
 }
 
 .attempt-details small {
@@ -163,7 +136,7 @@
 }
 
 .attempt-verdict {
-  padding: 6px 10px;
+  padding: 5px 10px;
   background: #f5f5f5;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -173,7 +146,7 @@
   white-space: nowrap;
 }
 
-/* Scrollbars */
+/* Scrollbar */
 
 .workspace-left::-webkit-scrollbar,
 .workspace-right::-webkit-scrollbar {
@@ -198,10 +171,6 @@
     grid-template-columns: minmax(280px, 38%) minmax(0, 62%);
     gap: 12px;
     padding: 12px;
-  }
-
-  .attempt-item {
-    padding: 13px 15px;
   }
 }
 
@@ -233,10 +202,6 @@
   .workspace-right > * {
     flex-shrink: 0;
   }
-
-  .attempt-list {
-    max-height: 280px;
-  }
 }
 
 /* Small Mobile */
@@ -247,21 +212,11 @@
     gap: 10px;
   }
 
-  .recent-attempts-header {
-    padding: 13px 14px;
-  }
-
   .attempt-item {
     padding: 12px;
-    gap: 8px;
   }
 
-  .attempt-verdict {
-    padding: 5px 7px;
-    font-size: 10px;
-  }
-
-  .no-attempts {
-    padding: 18px 12px;
+  .recent-attempts-header {
+    padding: 13px 14px;
   }
 }
